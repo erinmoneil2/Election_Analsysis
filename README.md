@@ -42,10 +42,13 @@ Diana DeGette
 The code withing the attached PyPoll_Challenge.py was the code developed to conduct the election results audit. This script could realistically be used for any election to audit the results. If we wanted to create a audit for a different set of counties, the only piece of code that would change is the csv document uploaded in line 3 of the code. This code also would work on a set of data that had many candidates and over more counties, this data set just happens to only have three. Since there are two for loops that loop through the data and conduct new counts for every candidate or county, if there is an additional county added to the list, the fomula would count it as a new county (or new counties) and would produce a similar looking output. If you wanted to use this for presidential elections, you could alter the script to instead of list counties, list states. (county_names becomes state_names, and county_votes becomes state_votes), and adjust all subsequent script to match state instead of county data. In this case, you would also have to ensure that the headers in the CSV file matched the headers we are indicating in the script. In this case, the candidate header is in column 3 (row[2]) and the county is in column 2 (row[1]). If the header were to change in apresidential election and have Ballot ID, Candidate, State the header we are looking for would switch and we would have to change it in the 'for row in header' loop. 
 
 This is the location where if you need to upload a different CSV file, this is where you would reference it. Instead of "election_results", the new csv file and another data would be referenced here. 
+
 <img width="522" alt="Screen Shot 2021-11-11 at 2 12 58 PM" src="https://user-images.githubusercontent.com/92831268/141376406-55e27063-c2ce-46b2-9eff-1c7750854db3.png">
 
 This is where you would change county to state. 
+
 <img width="436" alt="Screen Shot 2021-11-11 at 2 10 51 PM" src="https://user-images.githubusercontent.com/92831268/141376249-c0e7fe97-a562-4721-8c87-cc0d1542d881.png">
 
 This is where you need to ensure that the appropriate header is being selected for the information desired.
+
 <img width="385" alt="Screen Shot 2021-11-11 at 2 11 03 PM" src="https://user-images.githubusercontent.com/92831268/141376295-f8783c84-ac16-4496-9b6b-c0c68a91f735.png">
